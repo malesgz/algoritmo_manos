@@ -1,13 +1,7 @@
-# 🧼 Lavarse las Manos:
+# Juego de algoritmos:
 
-Juego educativo simple hecho con **HTML**, **CSS** y **JavaScript** que permite a los alumnos aprender y practicar algoritmos cotidianos como el proceso de lavarse las manos.
-
-## 🕹️ ¿Cómo se juega?
-
-1. Se muestran varios pasos en desorden.
-2. El alumno debe hacer clic en los pasos en el orden correcto.
-3. Al hacer clic, los pasos se agregan a una lista ordenada.
-4. Si se comete un error, se puede **reiniciar** el juego y volver a intentar.
+## Descripción:
+Este proyecto consta de dos algoritmos simples para la demostración de la lógica de programación básica y una breve introducción al pensamiento de un programador.
 
 ## 🧠 Objetivo
 
@@ -21,5 +15,5 @@ Practicar el pensamiento lógico y la secuencia de pasos en actividades diarias 
 
 ## 👨‍🏫 Ideal para:
 
-- Actividades educativas con alumnos de primaria o secundaria.
+- Actividades educativas con alumnos de secundaria.
 - Introducción a algoritmos y programación sin necesidad de código.
