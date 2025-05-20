@@ -2,23 +2,36 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Juego: Lavarse las manos</title>
+  <title>Juego de Algoritmos</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>🧼 ¡A lavarse las manos!</h1>
-  <p>Click en los pasos en el orden correcto:</p>
-  
-  <div id="step-buttons" class="buttons-container"></div>
+  <div id="main-content">
+    <h1>🧠 Juego de Algoritmos</h1>
+    <p id="instructions">Selecciona los pasos correctos en orden:</p>
 
-  <h2>🧩 Tu algoritmo:</h2>
-  <ol id="selected-steps"></ol>
+    <div id="choice-container"></div>
+    <div id="step-buttons" class="buttons-container"></div>
 
-  <button id="checkButton">✅ Verificar</button>
-  <button id="retryButton">🔁 Reintentar</button>
+    <h2>📋 Tu secuencia:</h2>
+    <ol id="selected-steps"></ol>
 
-  <p id="result"></p>
+    <div id="controls">
+      <p id="result-message" style="font-size: 1.3rem; font-weight: bold;"></p>
+      <button onclick="verifySequence()">✅ Verificar</button>
+      <button onclick="resetGame()">🔄 Reintentar</button>
+      <button id="next-level" onclick="nextLevel()" style="display: none;">⏭️ Ir al siguiente nivel</button>
+    </div>
+  </div>
+
+  <div id="final-page" style="display: none; text-align: center; margin-top: 2rem;">
+    <h2>🎉 ¡Felicidades resolviste tus primeros algoritmos!. 🎉</h2>
+    <img src="felicidades.jpg" alt="Felicidades" style="max-width: 300px; margin-top: 1rem;">
+    <br>
+    <button onclick="location.reload()">Volver a jugar</button>
+  </div>
 
   <script src="script.js"></script>
-</body>
+</body> 
 </html>

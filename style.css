@@ -6,18 +6,30 @@ body {
   padding: 30px;
   background-color: #f0f8ff;
   font-size: 1.2rem;
+  margin: 0;
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   margin-bottom: 10px;
+}
+
+h2, h3 {
+  margin-top: 20px;
 }
 
 p {
   margin-bottom: 20px;
 }
 
-.buttons-container {
+#main-content,
+#final-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.buttons-container,
+#step-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -36,15 +48,87 @@ button.step {
   transition: transform 0.2s ease;
 }
 
+button.step:hover {
+  transform: scale(1.05);
+}
+
 #selected-steps {
   list-style-type: decimal;
   text-align: left;
   max-width: 600px;
   margin: 0 auto 30px;
-  padding-left: 20px; /* Ajusta este valor si querés acercarlo más */
+  padding-left: 20px;
   font-size: 1.1rem;
 }
 
 #selected-steps li {
   margin: 5px 0;
+}
+
+#controls button,
+#next-level {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #2196f3;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#controls button:hover,
+#next-level:hover {
+  background-color: #1976d2;
+}
+
+#choice-container {
+  margin-bottom: 20px;
+}
+
+.choice-button {
+  padding: 20px 30px;
+  background-color: #ff9800; /* Naranja vibrante */
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.choice-button:hover {
+  transform: scale(1.05);
+  background-color: #fb8c00; /* Naranja más oscuro al pasar el mouse */
+}
+
+#result-message {
+  font-weight: bold;
+  margin-top: 20px;
+  min-height: 1.5em;
+}
+
+#final-page img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#final-page button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #673ab7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#final-page button:hover {
+  background-color: #512da8;
 }
